@@ -11,7 +11,10 @@ app.get('/', (req, res) => {
 app.get('/home', (req, res) => {
   res.send('hi sadiq !');
 });
-
+app.use("/contac",()=>{
+  console.log("hi");
+  
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
